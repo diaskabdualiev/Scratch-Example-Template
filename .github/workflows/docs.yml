@@ -3,7 +3,9 @@ name: Build and Deploy Documentation
 # Автоматическая сборка при push в main/master
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
   
   # Возможность запуска вручную
   workflow_dispatch:
@@ -29,26 +31,25 @@ jobs:
       uses: actions/checkout@v4
     
     - name: Setup Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v4
       with:
         python-version: '3.11'
-        cache: 'pip'
     
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements-minimal.txt
+        pip install -r requirements.txt
     
     - name: Build documentation
       run: |
-        cd source
+        # Выполняем make html из корневой папки где находится Makefile
         make html
         # Создаем .nojekyll для правильной работы с GitHub Pages
-        touch _build/html/.nojekyll
+        touch source/_build/html/.nojekyll
     
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./source/_build/html
