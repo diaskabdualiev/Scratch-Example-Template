@@ -1,0 +1,110 @@
+# Sphinx Wiki Template .gitignore
+# ================================
+
+# Sphinx build outputs
+build/
+_build/
+_static/
+_templates/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Sphinx specific
+.doctrees/
+.buildinfo
+.buildinfo.bak
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Temporary files
+*.tmp
+*.temp
+
+# Local configuration (if any)
+local_settings.py
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Translations
+*.mo
+*.pot
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Local environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Node modules (if using any JS tools)
+node_modules/
+
+# Sphinx autobuild
+.sphinx-autobuild
+
+# Generated documentation formats
+*.pdf
+*.epub
+*.mobi
+
+# Keep essential files
+!source/_static/.gitkeep
+!source/_templates/.gitkeep 
