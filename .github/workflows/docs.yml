@@ -45,14 +45,14 @@ jobs:
         # Выполняем make html из корневой папки где находится Makefile
         make html
         # Создаем .nojekyll для правильной работы с GitHub Pages
-        touch source/_build/html/.nojekyll
+        touch build/html/.nojekyll
     
     - name: Deploy to GitHub Pages
       if: github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./source/_build/html
+        publish_dir: ./build/html
         force_orphan: true
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
