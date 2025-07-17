@@ -1,0 +1,556 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Перекрестные ссылки &mdash; документация Alashed Scratch 1.0.0</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=e35015f7"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=cd1d70c9"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="Продвинутые функции" href="advanced_features.html" />
+    <link rel="prev" title="Таблицы и списки" href="tables_and_lists.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980b9" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Alashed Scratch
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Основы:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="restructuredtext_basics.html">1. Основы reStructuredText</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id1">1.1. Заголовки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id2">1.2. Форматирование текста</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id3">1.3. Списки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id4">1.4. Ссылки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id5">1.5. Цитаты и блоки кода</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id6">1.6. Сноски и комментарии</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id9">1.7. Специальные символы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id10">1.8. Разделители</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id11">1.9. Следующий раздел</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sphinx_directives.html">2. Директивы Sphinx</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id1">2.1. Блоки уведомлений</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#todo">2.2. TODO директивы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id5">2.3. Блоки кода</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id6">2.4. Фигуры и изображения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id7">2.5. Содержимое и навигация</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id9">2.6. Замещения и аббревиатуры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id10">2.7. Колонки и контейнеры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id11">2.8. Условное содержимое</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id12">2.9. Глоссарий терминов</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id13">2.10. Вкладки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id14">2.11. Индексы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id15">2.12. Боковые панели</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id16">2.13. Цитаты и эпиграфы</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="code_examples.html">3. Примеры кода</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#python">3.1. Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#javascript">3.2. JavaScript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#html-css">3.3. HTML и CSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#sql">3.4. SQL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#json">3.5. JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#bash-shell">3.6. Bash/Shell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#yaml">3.7. YAML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#dockerfile">3.8. Dockerfile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#id2">3.9. Интерактивные примеры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#id3">3.10. Включение внешних файлов</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Продвинутые возможности:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="math_formulas.html">Математические формулы</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#inline">Inline математика</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#block">Block математика</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id2">Системы уравнений</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id3">Матрицы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id4">Суммы и произведения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id5">Интегралы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id6">Производные</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id7">Дроби и корни</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id8">Тригонометрия</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id9">Логарифмы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id10">Статистика и вероятность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id11">Сложные примеры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id12">Нумерация уравнений</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#align">Align окружения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id13">Специальные символы</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tables_and_lists.html">Таблицы и списки</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id2">Простые таблицы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id3">Сложные таблицы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#csv">CSV таблицы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#list">List таблицы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id4">Многоуровневые списки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id5">Маркированные списки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id6">Списки определений</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#field-lists">Поля (Field Lists)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id7">Списки опций</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id8">Комбинированные структуры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id9">Таблица с кодом</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id10">Контрольные списки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id11">Библиография</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id14">Глоссарий и термины</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Перекрестные ссылки</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#section-internal-links">Внутренние ссылки</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Ссылки на разделы</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-label">Пользовательские метки</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">Ссылки на документы</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Относительные ссылки</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Абсолютные ссылки</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#python">Ссылки на объекты Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#calculate_area"><code class="docutils literal notranslate"><span class="pre">calculate_area()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#UserManager"><code class="docutils literal notranslate"><span class="pre">UserManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#UserManager.create_user"><code class="docutils literal notranslate"><span class="pre">UserManager.create_user()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#UserManager.delete_user"><code class="docutils literal notranslate"><span class="pre">UserManager.delete_user()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#UserNotFoundError"><code class="docutils literal notranslate"><span class="pre">UserNotFoundError</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">Внешние ссылки</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Простые внешние ссылки</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">Именованные ссылки</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">Автоматические ссылки</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#intersphinx">Intersphinx ссылки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">Условные ссылки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">Навигация по документации</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id16">Оглавление</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id18">Индекс терминов</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#index-1">Глоссарий ссылок</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id20">Автоматическая нумерация</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id21">Ссылки на файлы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id22">Навигационные элементы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id23">Поиск и фильтрация</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id24">Якорные ссылки</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#anchor-point">Создание якорной точки для прямых ссылок</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id26">Проверка ссылок</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_features.html">Продвинутые функции</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#python">Автодокументация Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="advanced_features.html#os.getcwd"><code class="docutils literal notranslate"><span class="pre">getcwd()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="advanced_features.html#os.listdir"><code class="docutils literal notranslate"><span class="pre">listdir()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id2">Условная документация</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id3">Версионирование</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id4">Пользовательские директивы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id5">Включение файлов</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id6">Замещения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#roles">Роли (Roles)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id7">Расширения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id8">Диаграммы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id9">Интернационализация</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id10">Темы оформления</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id11">Кастомизация вывода</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id12">Производительность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id13">Отладка</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#git">Интеграция с Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id14">Развертывание</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id15">Мониторинг документации</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id16">Безопасность</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Дополнительно:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Глоссарий</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#id2">Использование глоссария</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#id3">Добавление терминов</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#id4">Сортировка</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#id5">Индексирование</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств"  style="background: #2980b9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Alashed Scratch</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Перекрестные ссылки</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/your-username/scratch-wiki/blob/main/source/cross_references.rst" class="fa fa-github"> Редактировать на GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>Перекрестные ссылки<a class="headerlink" href="#id1" title="Ссылка на этот заголовок"></a></h1>
+<p>Sphinx предоставляет мощную систему перекрестных ссылок для связывания
+различных частей документации.</p>
+<section id="section-internal-links">
+<span id="id2"></span><h2>Внутренние ссылки<a class="headerlink" href="#section-internal-links" title="Ссылка на этот заголовок"></a></h2>
+<section id="id3">
+<h3>Ссылки на разделы<a class="headerlink" href="#id3" title="Ссылка на этот заголовок"></a></h3>
+<p>Вы можете ссылаться на разделы несколькими способами:</p>
+<ul class="simple">
+<li><p>Автоматическая ссылка на заголовок: <a class="reference internal" href="#id2">Внутренние ссылки</a></p></li>
+<li><p>Ссылка по метке: <a class="reference internal" href="#section-internal-links"><span class="std std-ref">Внутренние ссылки</span></a></p></li>
+<li><p>Ссылка на документ: <a class="reference internal" href="restructuredtext_basics.html"><span class="doc">Основы reStructuredText</span></a></p></li>
+</ul>
+</section>
+<section id="custom-label">
+<span id="id4"></span><h3>Пользовательские метки<a class="headerlink" href="#custom-label" title="Ссылка на этот заголовок"></a></h3>
+<p>Создайте метку перед любым элементом:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_custom-label:</span>
+
+<span class="gh">Заголовок раздела</span>
+<span class="gh">=================</span>
+</pre></div>
+</div>
+<p>Затем ссылайтесь на неё: <a class="reference internal" href="#custom-label"><span class="std std-ref">Пользовательские метки</span></a></p>
+</section>
+</section>
+<section id="id5">
+<h2>Ссылки на документы<a class="headerlink" href="#id5" title="Ссылка на этот заголовок"></a></h2>
+<section id="id6">
+<h3>Относительные ссылки<a class="headerlink" href="#id6" title="Ссылка на этот заголовок"></a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="sphinx_directives.html"><span class="doc">Директивы Sphinx</span></a> - ссылка на документ в той же папке</p></li>
+<li><p><a class="reference internal" href="code_examples.html"><span class="doc">Примеры кода</span></a> - явный относительный путь</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/fb0d0d7ff27f33697ba3b787ec894677/conf.py"><code class="xref download docutils literal notranslate"><span class="pre">Конфигурация</span> <span class="pre">Sphinx</span></code></a> - скачать файл конфигурации</p></li>
+</ul>
+<p>Ссылки с пользовательским текстом:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="sphinx_directives.html"><span class="doc">Директивы Sphinx</span></a></p></li>
+<li><p><a class="reference internal" href="code_examples.html"><span class="doc">Примеры кода</span></a></p></li>
+</ul>
+</section>
+<section id="id7">
+<h3>Абсолютные ссылки<a class="headerlink" href="#id7" title="Ссылка на этот заголовок"></a></h3>
+<p>Ссылки от корня проекта:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="index.html"><span class="doc">Демонстрация возможностей Sphinx Dias</span></a> - главная страница</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/fb0d0d7ff27f33697ba3b787ec894677/conf.py"><code class="xref download docutils literal notranslate"><span class="pre">Конфигурация</span></code></a> - файл настроек</p></li>
+</ul>
+</section>
+</section>
+<section id="python">
+<h2>Ссылки на объекты Python<a class="headerlink" href="#python" title="Ссылка на этот заголовок"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Для демонстрации создадим несколько Python объектов для ссылок.</p>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="calculate_area">
+<span class="sig-name descname"><span class="pre">calculate_area</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#calculate_area" title="Ссылка на это определение"></a></dt>
+<dd><p>Вычисляет площадь прямоугольника.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>length</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(в Python v3.13)"><em>float</em></a>) – Длина прямоугольника</p></li>
+<li><p><strong>width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(в Python v3.13)"><em>float</em></a>) – Ширина прямоугольника</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат<span class="colon">:</span></dt>
+<dd class="field-even"><p>Площадь прямоугольника</p>
+</dd>
+<dt class="field-odd">Тип результата<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(в Python v3.13)">float</a></p>
+</dd>
+</dl>
+<p>Пример использования:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">area</span> <span class="o">=</span> <span class="n">calculate_area</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Площадь: </span><span class="si">{</span><span class="n">area</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="UserManager">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UserManager</span></span><a class="headerlink" href="#UserManager" title="Ссылка на это определение"></a></dt>
+<dd><p>Класс для управления пользователями.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="UserManager.create_user">
+<span class="sig-name descname"><span class="pre">create_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#UserManager.create_user" title="Ссылка на это определение"></a></dt>
+<dd><p>Создает нового пользователя.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(в Python v3.13)"><em>str</em></a>) – Имя пользователя</p></li>
+<li><p><strong>email</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(в Python v3.13)"><em>str</em></a>) – Email пользователя</p></li>
+</ul>
+</dd>
+<dt class="field-even">Результат<span class="colon">:</span></dt>
+<dd class="field-even"><p>Созданный пользователь</p>
+</dd>
+<dt class="field-odd">Тип результата<span class="colon">:</span></dt>
+<dd class="field-odd"><p>User</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="UserManager.delete_user">
+<span class="sig-name descname"><span class="pre">delete_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#UserManager.delete_user" title="Ссылка на это определение"></a></dt>
+<dd><p>Удаляет пользователя по ID.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>user_id</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(в Python v3.13)"><em>int</em></a>) – ID пользователя</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="UserNotFoundError">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UserNotFoundError</span></span><a class="headerlink" href="#UserNotFoundError" title="Ссылка на это определение"></a></dt>
+<dd><p>Исключение, возникающее когда пользователь не найден.</p>
+</dd></dl>
+
+<p>Ссылки на объекты:</p>
+<ul class="simple">
+<li><p>Функция: <a class="reference internal" href="#calculate_area" title="calculate_area"><code class="xref py py-func docutils literal notranslate"><span class="pre">calculate_area()</span></code></a></p></li>
+<li><p>Класс: <a class="reference internal" href="#UserManager" title="UserManager"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserManager</span></code></a></p></li>
+<li><p>Метод: <a class="reference internal" href="#UserManager.create_user" title="UserManager.create_user"><code class="xref py py-meth docutils literal notranslate"><span class="pre">UserManager.create_user()</span></code></a></p></li>
+<li><p>Исключение: <a class="reference internal" href="#UserNotFoundError" title="UserNotFoundError"><code class="xref py py-exc docutils literal notranslate"><span class="pre">UserNotFoundError</span></code></a></p></li>
+</ul>
+<p>Ссылки с пользовательским текстом:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#calculate_area" title="calculate_area"><code class="xref py py-func docutils literal notranslate"><span class="pre">Вычисление</span> <span class="pre">площади</span></code></a></p></li>
+<li><p><a class="reference internal" href="#UserManager" title="UserManager"><code class="xref py py-class docutils literal notranslate"><span class="pre">Менеджер</span> <span class="pre">пользователей</span></code></a></p></li>
+</ul>
+</section>
+<section id="id8">
+<h2>Внешние ссылки<a class="headerlink" href="#id8" title="Ссылка на этот заголовок"></a></h2>
+<section id="id9">
+<h3>Простые внешние ссылки<a class="headerlink" href="#id9" title="Ссылка на этот заголовок"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://python.org/">Python</a></p></li>
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/">Sphinx Documentation</a></p></li>
+<li><p><a class="reference external" href="https://github.com/">GitHub</a></p></li>
+</ul>
+</section>
+<section id="id11">
+<h3>Именованные ссылки<a class="headerlink" href="#id11" title="Ссылка на этот заголовок"></a></h3>
+<p>Это ссылка на <a class="reference external" href="https://docs.python.org/">Официальную документацию Python</a>.</p>
+</section>
+<section id="id13">
+<h3>Автоматические ссылки<a class="headerlink" href="#id13" title="Ссылка на этот заголовок"></a></h3>
+<p>Sphinx автоматически создает ссылки для:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/">https://www.sphinx-doc.org/</a></p></li>
+<li><p><a class="reference external" href="mailto:user&#37;&#52;&#48;example&#46;com">user<span>&#64;</span>example<span>&#46;</span>com</a> (нужно включить расширение)</p></li>
+</ul>
+</section>
+</section>
+<section id="intersphinx">
+<h2>Intersphinx ссылки<a class="headerlink" href="#intersphinx" title="Ссылка на этот заголовок"></a></h2>
+<p>Ссылки на другую документацию Sphinx:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#print" title="(в Python v3.13)"><code class="xref py py-func docutils literal notranslate"><span class="pre">print()</span></code></a> - функция Python</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(в Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a> - класс словаря Python</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/os.html#module-os" title="(в Python v3.13)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">os</span></code></a> - модуль os</p></li>
+</ul>
+<p>Ссылки на Sphinx документацию:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/quickstart.html" title="(в Sphinx v8.3.0)"><span>Getting started</span></a> - быстрый старт Sphinx</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Intersphinx ссылки настраиваются в conf.py через intersphinx_mapping.</p>
+</div>
+</section>
+<section id="id14">
+<h2>Условные ссылки<a class="headerlink" href="#id14" title="Ссылка на этот заголовок"></a></h2>
+<p>Эта ссылка видна только в HTML: <a class="reference internal" href="code_examples.html"><span class="doc">Примеры кода</span></a></p>
+</section>
+<section id="id15">
+<h2>Навигация по документации<a class="headerlink" href="#id15" title="Ссылка на этот заголовок"></a></h2>
+<section id="id16">
+<h3>Оглавление<a class="headerlink" href="#id16" title="Ссылка на этот заголовок"></a></h3>
+</section>
+<section id="id18">
+<h3>Индекс терминов<a class="headerlink" href="#id18" title="Ссылка на этот заголовок"></a></h3>
+<p id="index-0">Создание индексных записей:</p>
+</section>
+</section>
+<section id="index-1">
+<span id="id19"></span><h2>Глоссарий ссылок<a class="headerlink" href="#index-1" title="Ссылка на этот заголовок"></a></h2>
+<p>Термины, связанные со ссылками (см. полный <a class="reference internal" href="glossary.html"><span class="doc">Глоссарий</span></a>):</p>
+<dl class="simple">
+<dt><strong>Anchor</strong></dt><dd><p>HTML элемент для создания якорных ссылок.</p>
+</dd>
+<dt><strong>Hyperlink</strong></dt><dd><p>Интерактивная ссылка на другой документ или ресурс.</p>
+</dd>
+<dt><strong>Internal link</strong></dt><dd><p>Ссылка внутри одного документа или проекта.</p>
+</dd>
+<dt><strong>External link</strong></dt><dd><p>Ссылка на внешний ресурс в интернете.</p>
+</dd>
+</dl>
+<p>Работающие ссылки на термины из <a class="reference internal" href="glossary.html"><span class="doc">Глоссарий</span></a>:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="glossary.html#term-Cross-reference"><span class="xref std std-term">Cross-reference</span></a> - перекрестные ссылки</p></li>
+<li><p><a class="reference internal" href="glossary.html#term-Directive"><span class="xref std std-term">Directive</span></a> - команды reStructuredText</p></li>
+<li><p><a class="reference internal" href="glossary.html#term-Extension"><span class="xref std std-term">Extension</span></a> - расширения Sphinx</p></li>
+</ul>
+</section>
+<section id="id20">
+<h2>Автоматическая нумерация<a class="headerlink" href="#id20" title="Ссылка на этот заголовок"></a></h2>
+<figure class="align-center" id="id27">
+<span id="figure-example"></span><img alt="Пример рисунка" src="https://via.placeholder.com/300x200.png?text=Рисунок+1" />
+<figcaption>
+<p><span class="caption-number">Рисунок 1 </span><span class="caption-text">Рисунок 1: Пример изображения для ссылки</span><a class="headerlink" href="#id27" title="Ссылка на это изображение"></a></p>
+</figcaption>
+</figure>
+<p>Ссылка на рисунок: см. <a class="reference internal" href="#figure-example"><span class="std std-numref">Рисунок 1</span></a>.</p>
+<span id="table-example"></span><table class="docutils align-center" id="id28">
+<caption><span class="caption-number">Таблица 5 </span><span class="caption-text">Пример таблицы для ссылки</span><a class="headerlink" href="#id28" title="Ссылка на эту таблицу"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>C</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>5</p></td>
+<td><p>6</p></td>
+</tr>
+</tbody>
+</table>
+<p>Ссылка на таблицу: см. <a class="reference internal" href="#table-example"><span class="std std-numref">Таблица 5</span></a>.</p>
+</section>
+<section id="id21">
+<h2>Ссылки на файлы<a class="headerlink" href="#id21" title="Ссылка на этот заголовок"></a></h2>
+<p>Загрузка файлов:</p>
+<p><a class="reference download internal" download="" href="_downloads/fb0d0d7ff27f33697ba3b787ec894677/conf.py"><code class="xref download docutils literal notranslate"><span class="pre">Скачать</span> <span class="pre">конфигурацию</span></code></a></p>
+<p>Ссылки на исходный код:</p>
+<p><a class="reference internal" href="index.html"><span class="doc">Главная страница</span></a></p>
+</section>
+<section id="id22">
+<h2>Навигационные элементы<a class="headerlink" href="#id22" title="Ссылка на этот заголовок"></a></h2>
+<p>Хлебные крошки создаются автоматически в зависимости от темы.</p>
+<p>Ссылки «Далее/Назад» создаются автоматически на основе главного toctree в <a class="reference internal" href="index.html"><span class="doc">Демонстрация возможностей Sphinx Dias</span></a>.</p>
+</section>
+<section id="id23">
+<h2>Поиск и фильтрация<a class="headerlink" href="#id23" title="Ссылка на этот заголовок"></a></h2>
+<p>Sphinx автоматически создает поисковый индекс для быстрого поиска.</p>
+<p>Метаданные для поиска:</p>
+<dl class="field-list simple">
+<dt class="field-odd">meta keywords<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Sphinx, ссылки, навигация, документация</p>
+</dd>
+<dt class="field-even">meta description<span class="colon">:</span></dt>
+<dd class="field-even"><p>Руководство по созданию перекрестных ссылок в Sphinx</p>
+</dd>
+</dl>
+</section>
+<section id="id24">
+<h2>Якорные ссылки<a class="headerlink" href="#id24" title="Ссылка на этот заголовок"></a></h2>
+<section id="anchor-point">
+<span id="id25"></span><h3>Создание якорной точки для прямых ссылок<a class="headerlink" href="#anchor-point" title="Ссылка на этот заголовок"></a></h3>
+<p>Ссылка на якорь: <a class="reference internal" href="#anchor-point"><span class="std std-ref">Создание якорной точки для прямых ссылок</span></a></p>
+<p>Внешняя ссылка с якорем: <a class="reference external" href="https://github.com/username/repo/issues#new">GitHub Issues</a></p>
+</section>
+</section>
+<section id="id26">
+<h2>Проверка ссылок<a class="headerlink" href="#id26" title="Ссылка на этот заголовок"></a></h2>
+<p>Sphinx может проверять корректность ссылок:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Проверка внешних ссылок</span>
+make<span class="w"> </span>linkcheck
+</pre></div>
+</div>
+<p>Это поможет найти битые ссылки в документации.</p>
+<div class="admonition tip">
+<p class="admonition-title">Совет</p>
+<p>Регулярно проверяйте ссылки в CI/CD pipeline для поддержания
+актуальности документации.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="tables_and_lists.html" class="btn btn-neutral float-left" title="Таблицы и списки" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+        <a href="advanced_features.html" class="btn btn-neutral float-right" title="Продвинутые функции" accesskey="n" rel="next">Следующая <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Авторские права 2025, Dias Kabdualiyev. </p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

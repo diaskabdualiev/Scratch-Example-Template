@@ -1,0 +1,428 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Математические формулы &mdash; документация Alashed Scratch 1.0.0</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=e35015f7"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=cd1d70c9"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="Таблицы и списки" href="tables_and_lists.html" />
+    <link rel="prev" title="3. Примеры кода" href="code_examples.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980b9" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Alashed Scratch
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Основы:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="restructuredtext_basics.html">1. Основы reStructuredText</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id1">1.1. Заголовки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id2">1.2. Форматирование текста</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id3">1.3. Списки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id4">1.4. Ссылки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id5">1.5. Цитаты и блоки кода</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id6">1.6. Сноски и комментарии</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id9">1.7. Специальные символы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id10">1.8. Разделители</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id11">1.9. Следующий раздел</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sphinx_directives.html">2. Директивы Sphinx</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id1">2.1. Блоки уведомлений</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#todo">2.2. TODO директивы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id5">2.3. Блоки кода</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id6">2.4. Фигуры и изображения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id7">2.5. Содержимое и навигация</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id9">2.6. Замещения и аббревиатуры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id10">2.7. Колонки и контейнеры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id11">2.8. Условное содержимое</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id12">2.9. Глоссарий терминов</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id13">2.10. Вкладки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id14">2.11. Индексы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id15">2.12. Боковые панели</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id16">2.13. Цитаты и эпиграфы</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="code_examples.html">3. Примеры кода</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#python">3.1. Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#javascript">3.2. JavaScript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#html-css">3.3. HTML и CSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#sql">3.4. SQL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#json">3.5. JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#bash-shell">3.6. Bash/Shell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#yaml">3.7. YAML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#dockerfile">3.8. Dockerfile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#id2">3.9. Интерактивные примеры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#id3">3.10. Включение внешних файлов</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Продвинутые возможности:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Математические формулы</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#inline">Inline математика</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#block">Block математика</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Системы уравнений</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Матрицы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">Суммы и произведения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">Интегралы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">Производные</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">Дроби и корни</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">Тригонометрия</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">Логарифмы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">Статистика и вероятность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">Сложные примеры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">Нумерация уравнений</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#align">Align окружения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">Специальные символы</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tables_and_lists.html">Таблицы и списки</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id2">Простые таблицы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id3">Сложные таблицы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#csv">CSV таблицы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#list">List таблицы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id4">Многоуровневые списки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id5">Маркированные списки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id6">Списки определений</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#field-lists">Поля (Field Lists)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id7">Списки опций</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id8">Комбинированные структуры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id9">Таблица с кодом</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id10">Контрольные списки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id11">Библиография</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id14">Глоссарий и термины</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cross_references.html">Перекрестные ссылки</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#section-internal-links">Внутренние ссылки</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#id3">Ссылки на разделы</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#custom-label">Пользовательские метки</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id5">Ссылки на документы</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#id6">Относительные ссылки</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#id7">Абсолютные ссылки</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#python">Ссылки на объекты Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#calculate_area"><code class="docutils literal notranslate"><span class="pre">calculate_area()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#UserManager"><code class="docutils literal notranslate"><span class="pre">UserManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cross_references.html#UserManager.create_user"><code class="docutils literal notranslate"><span class="pre">UserManager.create_user()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cross_references.html#UserManager.delete_user"><code class="docutils literal notranslate"><span class="pre">UserManager.delete_user()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#UserNotFoundError"><code class="docutils literal notranslate"><span class="pre">UserNotFoundError</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id8">Внешние ссылки</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#id9">Простые внешние ссылки</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#id11">Именованные ссылки</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#id13">Автоматические ссылки</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#intersphinx">Intersphinx ссылки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id14">Условные ссылки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id15">Навигация по документации</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#id16">Оглавление</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#id18">Индекс терминов</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#index-1">Глоссарий ссылок</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id20">Автоматическая нумерация</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id21">Ссылки на файлы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id22">Навигационные элементы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id23">Поиск и фильтрация</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id24">Якорные ссылки</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#anchor-point">Создание якорной точки для прямых ссылок</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id26">Проверка ссылок</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_features.html">Продвинутые функции</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#python">Автодокументация Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="advanced_features.html#os.getcwd"><code class="docutils literal notranslate"><span class="pre">getcwd()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="advanced_features.html#os.listdir"><code class="docutils literal notranslate"><span class="pre">listdir()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id2">Условная документация</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id3">Версионирование</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id4">Пользовательские директивы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id5">Включение файлов</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id6">Замещения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#roles">Роли (Roles)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id7">Расширения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id8">Диаграммы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id9">Интернационализация</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id10">Темы оформления</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id11">Кастомизация вывода</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id12">Производительность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id13">Отладка</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#git">Интеграция с Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id14">Развертывание</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id15">Мониторинг документации</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_features.html#id16">Безопасность</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Дополнительно:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Глоссарий</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#id2">Использование глоссария</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#id3">Добавление терминов</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#id4">Сортировка</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#id5">Индексирование</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств"  style="background: #2980b9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Alashed Scratch</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Математические формулы</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/your-username/scratch-wiki/blob/main/source/math_formulas.rst" class="fa fa-github"> Редактировать на GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="math-section">
+<span id="id1"></span><h1>Математические формулы<a class="headerlink" href="#math-section" title="Ссылка на этот заголовок"></a></h1>
+<p>Sphinx поддерживает LaTeX математические формулы через расширение MathJax.</p>
+<section id="inline">
+<h2>Inline математика<a class="headerlink" href="#inline" title="Ссылка на этот заголовок"></a></h2>
+<p>Формулы в строке записываются так: <span class="math notranslate nohighlight">\(E = mc^2\)</span> или <span class="math notranslate nohighlight">\(a^2 + b^2 = c^2\)</span>.</p>
+<p>Также можно использовать более сложные выражения: <span class="math notranslate nohighlight">\(\sum_{i=1}^{n} x_i = x_1 + x_2 + \ldots + x_n\)</span>.</p>
+</section>
+<section id="block">
+<h2>Block математика<a class="headerlink" href="#block" title="Ссылка на этот заголовок"></a></h2>
+<p>Для блочных формул используется директива <cite>.. math::</cite>:</p>
+<div class="math notranslate nohighlight">
+\[\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}\]</div>
+<p>Квадратичная формула:</p>
+<div class="math notranslate nohighlight">
+\[x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]</div>
+<p>Формула Эйлера:</p>
+<div class="math notranslate nohighlight">
+\[e^{i\pi} + 1 = 0\]</div>
+</section>
+<section id="id2">
+<h2>Системы уравнений<a class="headerlink" href="#id2" title="Ссылка на этот заголовок"></a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+x + y = 5 \\
+2x - y = 1
+\end{cases}\end{split}\]</div>
+</section>
+<section id="id3">
+<h2>Матрицы<a class="headerlink" href="#id3" title="Ссылка на этот заголовок"></a></h2>
+<p>Простая матрица:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{pmatrix}
+1 &amp; 2 &amp; 3 \\
+4 &amp; 5 &amp; 6 \\
+7 &amp; 8 &amp; 9
+\end{pmatrix}\end{split}\]</div>
+<p>Определитель матрицы:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\det(A) = \begin{vmatrix}
+a &amp; b \\
+c &amp; d
+\end{vmatrix} = ad - bc\end{split}\]</div>
+</section>
+<section id="id4">
+<h2>Суммы и произведения<a class="headerlink" href="#id4" title="Ссылка на этот заголовок"></a></h2>
+<p>Сумма ряда:</p>
+<div class="math notranslate nohighlight">
+\[S = \sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}\]</div>
+<p>Произведение:</p>
+<div class="math notranslate nohighlight">
+\[\prod_{i=1}^{n} x_i = x_1 \cdot x_2 \cdot \ldots \cdot x_n\]</div>
+<p>Пределы:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\lim_{x \to \infty} \frac{1}{x} = 0\\\lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = e\end{aligned}\end{align} \]</div>
+</section>
+<section id="id5">
+<h2>Интегралы<a class="headerlink" href="#id5" title="Ссылка на этот заголовок"></a></h2>
+<p>Определенный интеграл:</p>
+<div class="math notranslate nohighlight">
+\[\int_0^1 x^2 dx = \frac{1}{3}\]</div>
+<p>Неопределенный интеграл:</p>
+<div class="math notranslate nohighlight">
+\[\int e^x dx = e^x + C\]</div>
+<p>Двойной интеграл:</p>
+<div class="math notranslate nohighlight">
+\[\iint_D f(x,y) \, dx \, dy\]</div>
+</section>
+<section id="id6">
+<h2>Производные<a class="headerlink" href="#id6" title="Ссылка на этот заголовок"></a></h2>
+<p>Производная функции:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dx} x^n = nx^{n-1}\]</div>
+<p>Частные производные:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial f}{\partial x} = \lim_{h \to 0} \frac{f(x+h,y) - f(x,y)}{h}\]</div>
+<p>Градиент:</p>
+<div class="math notranslate nohighlight">
+\[\nabla f = \left( \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z} \right)\]</div>
+</section>
+<section id="id7">
+<h2>Дроби и корни<a class="headerlink" href="#id7" title="Ссылка на этот заголовок"></a></h2>
+<p>Сложные дроби:</p>
+<div class="math notranslate nohighlight">
+\[\cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{\ddots}}}}\]</div>
+<p>Корни:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\sqrt{x^2 + y^2}\\\sqrt[n]{x}\end{aligned}\end{align} \]</div>
+</section>
+<section id="id8">
+<h2>Тригонометрия<a class="headerlink" href="#id8" title="Ссылка на этот заголовок"></a></h2>
+<p>Основные функции:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\sin^2 x + \cos^2 x = 1\\\tan x = \frac{\sin x}{\cos x}\end{aligned}\end{align} \]</div>
+<p>Формула Эйлера для тригонометрии:</p>
+<div class="math notranslate nohighlight">
+\[e^{ix} = \cos x + i \sin x\]</div>
+</section>
+<section id="id9">
+<h2>Логарифмы<a class="headerlink" href="#id9" title="Ссылка на этот заголовок"></a></h2>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\log_a b = \frac{\ln b}{\ln a}\\\log_a (xy) = \log_a x + \log_a y\end{aligned}\end{align} \]</div>
+</section>
+<section id="id10">
+<h2>Статистика и вероятность<a class="headerlink" href="#id10" title="Ссылка на этот заголовок"></a></h2>
+<p>Нормальное распределение:</p>
+<div class="math notranslate nohighlight">
+\[f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}\]</div>
+<p>Биномиальное распределение:</p>
+<div class="math notranslate nohighlight">
+\[P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}\]</div>
+<p>Формула Байеса:</p>
+<div class="math notranslate nohighlight">
+\[P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}\]</div>
+</section>
+<section id="id11">
+<h2>Сложные примеры<a class="headerlink" href="#id11" title="Ссылка на этот заголовок"></a></h2>
+<p>Формула Стирлинга:</p>
+<div class="math notranslate nohighlight">
+\[n! \approx \sqrt{2\pi n} \left(\frac{n}{e}\right)^n\]</div>
+<p>Преобразование Фурье:</p>
+<div class="math notranslate nohighlight">
+\[F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i\omega t} dt\]</div>
+<p>Уравнение Шрёдингера:</p>
+<div class="math notranslate nohighlight">
+\[i\hbar \frac{\partial \Psi}{\partial t} = \hat{H} \Psi\]</div>
+</section>
+<section id="id12">
+<h2>Нумерация уравнений<a class="headerlink" href="#id12" title="Ссылка на этот заголовок"></a></h2>
+<p>Уравнения можно нумеровать:</p>
+<div class="math notranslate nohighlight" id="equation-euler-formula">
+<span class="eqno">(1)<a class="headerlink" href="#equation-euler-formula" title="Ссылка на эту формулу"></a></span>\[e^{i\pi} + 1 = 0\]</div>
+<div class="math notranslate nohighlight" id="equation-pythagoras">
+<span class="eqno">(2)<a class="headerlink" href="#equation-pythagoras" title="Ссылка на эту формулу"></a></span>\[a^2 + b^2 = c^2\]</div>
+<p>Ссылка на уравнение: см. уравнение <a class="reference internal" href="#equation-euler-formula">(1)</a>.</p>
+</section>
+<section id="align">
+<h2>Align окружения<a class="headerlink" href="#align" title="Ссылка на этот заголовок"></a></h2>
+<p>Выравнивание по знакам:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+x &amp;= a + b + c \\
+&amp;= d + e \\
+&amp;= f
+\end{align}\end{split}\]</div>
+<p>Система с выравниванием:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+2x + 3y &amp;= 7 \\
+x - y &amp;= 1
+\end{align}\end{split}\]</div>
+</section>
+<section id="id13">
+<h2>Специальные символы<a class="headerlink" href="#id13" title="Ссылка на этот заголовок"></a></h2>
+<p>Греческие буквы: <span class="math notranslate nohighlight">\(\alpha, \beta, \gamma, \delta, \epsilon, \zeta, \eta, \theta, \lambda, \mu, \pi, \sigma, \phi, \chi, \psi, \omega\)</span></p>
+<p>Операторы: <span class="math notranslate nohighlight">\(\pm, \mp, \times, \div, \cdot, \circ, \bullet, \star\)</span></p>
+<p>Отношения: <span class="math notranslate nohighlight">\(\leq, \geq, \neq, \approx, \equiv, \sim, \propto\)</span></p>
+<p>Множества: <span class="math notranslate nohighlight">\(\in, \notin, \subset, \supset, \cup, \cap, \emptyset, \infty\)</span></p>
+<p>Стрелки: <span class="math notranslate nohighlight">\(\leftarrow, \rightarrow, \leftrightarrow, \Leftarrow, \Rightarrow, \Leftrightarrow\)</span></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="code_examples.html" class="btn btn-neutral float-left" title="3. Примеры кода" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+        <a href="tables_and_lists.html" class="btn btn-neutral float-right" title="Таблицы и списки" accesskey="n" rel="next">Следующая <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Авторские права 2025, Dias Kabdualiyev. </p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

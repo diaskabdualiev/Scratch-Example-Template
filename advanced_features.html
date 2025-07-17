@@ -1,0 +1,655 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Продвинутые функции &mdash; документация Alashed Scratch 1.0.0</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=e35015f7"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=cd1d70c9"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="Глоссарий" href="glossary.html" />
+    <link rel="prev" title="Перекрестные ссылки" href="cross_references.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980b9" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Alashed Scratch
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Основы:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="restructuredtext_basics.html">1. Основы reStructuredText</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id1">1.1. Заголовки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id2">1.2. Форматирование текста</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id3">1.3. Списки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id4">1.4. Ссылки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id5">1.5. Цитаты и блоки кода</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id6">1.6. Сноски и комментарии</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id9">1.7. Специальные символы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id10">1.8. Разделители</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restructuredtext_basics.html#id11">1.9. Следующий раздел</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sphinx_directives.html">2. Директивы Sphinx</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id1">2.1. Блоки уведомлений</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#todo">2.2. TODO директивы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id5">2.3. Блоки кода</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id6">2.4. Фигуры и изображения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id7">2.5. Содержимое и навигация</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id9">2.6. Замещения и аббревиатуры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id10">2.7. Колонки и контейнеры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id11">2.8. Условное содержимое</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id12">2.9. Глоссарий терминов</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id13">2.10. Вкладки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id14">2.11. Индексы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id15">2.12. Боковые панели</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sphinx_directives.html#id16">2.13. Цитаты и эпиграфы</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="code_examples.html">3. Примеры кода</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#python">3.1. Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#javascript">3.2. JavaScript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#html-css">3.3. HTML и CSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#sql">3.4. SQL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#json">3.5. JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#bash-shell">3.6. Bash/Shell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#yaml">3.7. YAML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#dockerfile">3.8. Dockerfile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#id2">3.9. Интерактивные примеры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_examples.html#id3">3.10. Включение внешних файлов</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Продвинутые возможности:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="math_formulas.html">Математические формулы</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#inline">Inline математика</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#block">Block математика</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id2">Системы уравнений</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id3">Матрицы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id4">Суммы и произведения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id5">Интегралы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id6">Производные</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id7">Дроби и корни</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id8">Тригонометрия</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id9">Логарифмы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id10">Статистика и вероятность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id11">Сложные примеры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id12">Нумерация уравнений</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#align">Align окружения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_formulas.html#id13">Специальные символы</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tables_and_lists.html">Таблицы и списки</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id2">Простые таблицы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id3">Сложные таблицы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#csv">CSV таблицы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#list">List таблицы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id4">Многоуровневые списки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id5">Маркированные списки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id6">Списки определений</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#field-lists">Поля (Field Lists)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id7">Списки опций</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id8">Комбинированные структуры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id9">Таблица с кодом</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id10">Контрольные списки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id11">Библиография</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables_and_lists.html#id14">Глоссарий и термины</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cross_references.html">Перекрестные ссылки</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#section-internal-links">Внутренние ссылки</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#id3">Ссылки на разделы</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#custom-label">Пользовательские метки</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id5">Ссылки на документы</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#id6">Относительные ссылки</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#id7">Абсолютные ссылки</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#python">Ссылки на объекты Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#calculate_area"><code class="docutils literal notranslate"><span class="pre">calculate_area()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#UserManager"><code class="docutils literal notranslate"><span class="pre">UserManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cross_references.html#UserManager.create_user"><code class="docutils literal notranslate"><span class="pre">UserManager.create_user()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cross_references.html#UserManager.delete_user"><code class="docutils literal notranslate"><span class="pre">UserManager.delete_user()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#UserNotFoundError"><code class="docutils literal notranslate"><span class="pre">UserNotFoundError</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id8">Внешние ссылки</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#id9">Простые внешние ссылки</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#id11">Именованные ссылки</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#id13">Автоматические ссылки</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#intersphinx">Intersphinx ссылки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id14">Условные ссылки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id15">Навигация по документации</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#id16">Оглавление</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#id18">Индекс терминов</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#index-1">Глоссарий ссылок</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id20">Автоматическая нумерация</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id21">Ссылки на файлы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id22">Навигационные элементы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id23">Поиск и фильтрация</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id24">Якорные ссылки</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cross_references.html#anchor-point">Создание якорной точки для прямых ссылок</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cross_references.html#id26">Проверка ссылок</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Продвинутые функции</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#python">Автодокументация Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#os.getcwd"><code class="docutils literal notranslate"><span class="pre">getcwd()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#os.listdir"><code class="docutils literal notranslate"><span class="pre">listdir()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Условная документация</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Версионирование</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">Пользовательские директивы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">Включение файлов</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">Замещения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#roles">Роли (Roles)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">Расширения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">Диаграммы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">Интернационализация</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">Темы оформления</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">Кастомизация вывода</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">Производительность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">Отладка</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#git">Интеграция с Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">Развертывание</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">Мониторинг документации</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id16">Безопасность</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Дополнительно:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Глоссарий</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#id2">Использование глоссария</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#id3">Добавление терминов</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#id4">Сортировка</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#id5">Индексирование</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств"  style="background: #2980b9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Alashed Scratch</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Продвинутые функции</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/your-username/scratch-wiki/blob/main/source/advanced_features.rst" class="fa fa-github"> Редактировать на GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>Продвинутые функции<a class="headerlink" href="#id1" title="Ссылка на этот заголовок"></a></h1>
+<p>Этот раздел демонстрирует продвинутые возможности Sphinx для создания
+профессиональной документации.</p>
+<section id="python">
+<h2>Автодокументация Python<a class="headerlink" href="#python" title="Ссылка на этот заголовок"></a></h2>
+<p>Sphinx может автоматически генерировать документацию из docstrings Python:</p>
+<p id="module-os">OS routines for NT or Posix depending on what system we’re on.</p>
+<dl class="simple">
+<dt>This exports:</dt><dd><ul class="simple">
+<li><p>all functions from posix or nt, e.g. unlink, stat, etc.</p></li>
+<li><p>os.path is either posixpath or ntpath</p></li>
+<li><p>os.name is either „posix“ or „nt“</p></li>
+<li><p>os.curdir is a string representing the current directory (always „.“)</p></li>
+<li><p>os.pardir is a string representing the parent directory (always „..“)</p></li>
+<li><p>os.sep is the (or a most common) pathname separator („/“ or „\“)</p></li>
+<li><p>os.extsep is the extension separator (always „.“)</p></li>
+<li><p>os.altsep is the alternate pathname separator (None or „/“)</p></li>
+<li><p>os.pathsep is the component separator used in $PATH etc</p></li>
+<li><p>os.linesep is the line separator in text files (“r“ or „n“ or „rn“)</p></li>
+<li><p>os.defpath is the default search path for executables</p></li>
+<li><p>os.devnull is the file path of the null device („/dev/null“, etc.)</p></li>
+</ul>
+</dd>
+</dl>
+<p>Programs that import and use „os“ stand a better chance of being
+portable between different platforms.  Of course, they must then
+only use functions that are defined by all platforms (e.g., unlink
+and opendir), and leave all pathname manipulation to os.path
+(e.g., split and join).</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="os.getcwd">
+<span class="sig-prename descclassname"><span class="pre">os.</span></span><span class="sig-name descname"><span class="pre">getcwd</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#os.getcwd" title="Ссылка на это определение"></a></dt>
+<dd><p>Return a unicode string representing the current working directory.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="os.listdir">
+<span class="sig-prename descclassname"><span class="pre">os.</span></span><span class="sig-name descname"><span class="pre">listdir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#os.listdir" title="Ссылка на это определение"></a></dt>
+<dd><p>Return a list containing the names of the files in the directory.</p>
+<dl class="simple">
+<dt>path can be specified as either str, bytes, or a path-like object.  If path is bytes,</dt><dd><p>the filenames returned will also be bytes; in all other circumstances
+the filenames returned will be str.</p>
+</dd>
+</dl>
+<p>If path is None, uses the path=“.“.
+On some platforms, path may also be specified as an open file descriptor;</p>
+<blockquote>
+<div><p>the file descriptor must refer to a directory.
+If this functionality is unavailable, using it raises NotImplementedError.</p>
+</div></blockquote>
+<p>The list is in arbitrary order.  It does not include the special
+entries „.“ and „..“ even if they are present in the directory.</p>
+</dd></dl>
+
+<p>Пример модуля для автодокументации:</p>
+<div class="literal-block-wrapper docutils container" id="id17">
+<div class="code-block-caption"><span class="caption-number">Листинг 1 </span><span class="caption-text">example_module.py</span><a class="headerlink" href="#id17" title="Ссылка на этот код"></a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;Пример модуля для демонстрации автодокументации.&quot;&quot;&quot;</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Calculator</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Простой калькулятор для демонстрации.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Инициализация калькулятора.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">history</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Сложение двух чисел.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            a: Первое число</span>
+<span class="sd">            b: Второе число</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Сумма чисел</span>
+
+<span class="sd">        Example:</span>
+<span class="sd">            &gt;&gt;&gt; calc = Calculator()</span>
+<span class="sd">            &gt;&gt;&gt; calc.add(2, 3)</span>
+<span class="sd">            5.0</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">history</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="id2">
+<h2>Условная документация<a class="headerlink" href="#id2" title="Ссылка на этот заголовок"></a></h2>
+<p>Содержимое может отображаться условно:</p>
+<p>Этот текст показывается только для русской локализации.</p>
+</section>
+<section id="id3">
+<h2>Версионирование<a class="headerlink" href="#id3" title="Ссылка на этот заголовок"></a></h2>
+<div class="versionadded">
+<p><span class="versionmodified added">Добавлено в версии 1.0: </span>Добавлена поддержка математических формул.</p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Изменено в версии 1.1: </span>Улучшена обработка изображений.</p>
+</div>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Устарело, начиная с версии 1.2: </span>Функция <code class="docutils literal notranslate"><span class="pre">old_method()</span></code> устарела. Используйте <code class="docutils literal notranslate"><span class="pre">new_method()</span></code>.</p>
+</div>
+<div class="versionremoved">
+<p><span class="versionmodified removed">Удалено в версии 2.0: </span>Поддержка Python 2.7 удалена.</p>
+</div>
+</section>
+<section id="id4">
+<h2>Пользовательские директивы<a class="headerlink" href="#id4" title="Ссылка на этот заголовок"></a></h2>
+<p>Пример создания пользовательской директивы:</p>
+<div class="literal-block-wrapper docutils container" id="id18">
+<div class="code-block-caption"><span class="caption-number">Листинг 2 </span><span class="caption-text">Добавление в conf.py</span><a class="headerlink" href="#id18" title="Ссылка на этот код"></a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">docutils</span><span class="w"> </span><span class="kn">import</span> <span class="n">nodes</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">docutils.parsers.rst</span><span class="w"> </span><span class="kn">import</span> <span class="n">Directive</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">HighlightBox</span><span class="p">(</span><span class="n">Directive</span><span class="p">):</span>
+    <span class="n">has_content</span> <span class="o">=</span> <span class="kc">True</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">container</span> <span class="o">=</span> <span class="n">nodes</span><span class="o">.</span><span class="n">container</span><span class="p">()</span>
+        <span class="n">container</span><span class="p">[</span><span class="s1">&#39;classes&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;highlight-box&#39;</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">nested_parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">container</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">container</span><span class="p">]</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">setup</span><span class="p">(</span><span class="n">app</span><span class="p">):</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">add_directive</span><span class="p">(</span><span class="s1">&#39;highlight&#39;</span><span class="p">,</span> <span class="n">HighlightBox</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="id5">
+<h2>Включение файлов<a class="headerlink" href="#id5" title="Ссылка на этот заголовок"></a></h2>
+<p>Sphinx позволяет включать содержимое из внешних файлов:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">include</span><span class="p">::</span> ../README.rst
+   <span class="nc">:start-line:</span> 1
+   <span class="nc">:end-line:</span> 5
+</pre></div>
+</div>
+<p>Это полезно для включения общих частей документации.</p>
+</section>
+<section id="id6">
+<h2>Замещения<a class="headerlink" href="#id6" title="Ссылка на этот заголовок"></a></h2>
+<p>Вы можете определить замещения для часто используемых фраз:</p>
+<p>Проект Alashed Scratch версии 1.0.0 создан автором Dias Kabdualiyev.</p>
+</section>
+<section id="roles">
+<h2>Роли (Roles)<a class="headerlink" href="#roles" title="Ссылка на этот заголовок"></a></h2>
+<p>Встроенные роли:</p>
+<ul class="simple">
+<li><p><abbr title="HyperText Markup Language">HTML</abbr></p></li>
+<li><p><abbr>API (Application Programming Interface)</abbr></p></li>
+<li><p><strong class="command">make html</strong></p></li>
+<li><p><code class="file docutils literal notranslate"><span class="pre">/path/to/file.txt</span></code></p></li>
+<li><p><span class="guilabel"><span class="accelerator">F</span>ile –&gt; <span class="accelerator">O</span>pen</span></p></li>
+<li><p><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">C</kbd></p></li>
+<li><p><em class="mailheader">Content-Type</em></p></li>
+<li><p><strong class="makevar">BUILDDIR</strong></p></li>
+<li><p><em class="manpage">grep(1)</em></p></li>
+<li><p><span class="menuselection">File ‣ Open</span></p></li>
+<li><p><em class="mimetype">text/html</em></p></li>
+<li><p><em class="newsgroup">comp.lang.python</em></p></li>
+<li><p><strong class="program">sphinx-build</strong></p></li>
+<li><p><code class="regexp docutils literal notranslate"><span class="pre">[a-z]+</span></code></p></li>
+<li><p><code class="samp docutils literal notranslate"><span class="pre">print</span> <em><span class="pre">variable</span></em></code></p></li>
+</ul>
+<p>Пользовательские роли:</p>
+<p>CSS для пользовательской роли:</p>
+<style>
+.red { color: red; }
+</style><p>Использование: <span class="red">красный текст</span>.</p>
+</section>
+<section id="id7">
+<h2>Расширения<a class="headerlink" href="#id7" title="Ссылка на этот заголовок"></a></h2>
+<p>Популярные расширения Sphinx:</p>
+<div class="literal-block-wrapper docutils container" id="id19">
+<div class="code-block-caption"><span class="caption-number">Листинг 3 </span><span class="caption-text">Дополнительные расширения в conf.py</span><a class="headerlink" href="#id19" title="Ссылка на этот код"></a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;sphinx.ext.autodoc&#39;</span><span class="p">,</span>      <span class="c1"># Автодокументация</span>
+    <span class="s1">&#39;sphinx.ext.viewcode&#39;</span><span class="p">,</span>     <span class="c1"># Ссылки на код</span>
+    <span class="s1">&#39;sphinx.ext.napoleon&#39;</span><span class="p">,</span>     <span class="c1"># Google/NumPy docstrings</span>
+    <span class="s1">&#39;sphinx.ext.intersphinx&#39;</span><span class="p">,</span>  <span class="c1"># Ссылки между проектами</span>
+    <span class="s1">&#39;sphinx.ext.todo&#39;</span><span class="p">,</span>         <span class="c1"># TODO списки</span>
+    <span class="s1">&#39;sphinx.ext.mathjax&#39;</span><span class="p">,</span>      <span class="c1"># Математика</span>
+    <span class="s1">&#39;sphinx.ext.ifconfig&#39;</span><span class="p">,</span>     <span class="c1"># Условная документация</span>
+    <span class="s1">&#39;sphinx.ext.graphviz&#39;</span><span class="p">,</span>     <span class="c1"># Диаграммы Graphviz</span>
+    <span class="s1">&#39;sphinx.ext.inheritance_diagram&#39;</span><span class="p">,</span>  <span class="c1"># Диаграммы наследования</span>
+    <span class="s1">&#39;sphinx_rtd_theme&#39;</span><span class="p">,</span>        <span class="c1"># ReadTheDocs тема</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="id8">
+<h2>Диаграммы<a class="headerlink" href="#id8" title="Ссылка на этот заголовок"></a></h2>
+<p>Sphinx поддерживает различные типы диаграмм через расширения.</p>
+<p>Пример Graphviz диаграммы (требует установки sphinx.ext.graphviz):</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">graphviz</span><span class="p">::</span>
+
+   digraph G {
+       rankdir=LR;
+       A -&gt; B -&gt; C;
+       A -&gt; C;
+       B -&gt; D;
+       C -&gt; D;
+   }
+</pre></div>
+</div>
+<p>Пример UML диаграммы наследования (требует sphinx.ext.inheritance_diagram):</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">inheritance-diagram</span><span class="p">::</span> builtins.list builtins.dict
+   <span class="nc">:parts:</span> 1
+</pre></div>
+</div>
+</section>
+<section id="id9">
+<h2>Интернационализация<a class="headerlink" href="#id9" title="Ссылка на этот заголовок"></a></h2>
+<p>Sphinx поддерживает создание многоязычной документации:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Извлечение строк для перевода</span>
+make<span class="w"> </span>gettext
+
+<span class="c1"># Создание переводов</span>
+sphinx-intl<span class="w"> </span>update<span class="w"> </span>-p<span class="w"> </span>build/gettext<span class="w"> </span>-l<span class="w"> </span>en<span class="w"> </span>-l<span class="w"> </span>de
+
+<span class="c1"># Сборка с переводом</span>
+make<span class="w"> </span>-e<span class="w"> </span><span class="nv">SPHINXOPTS</span><span class="o">=</span><span class="s2">&quot;-D language=&#39;en&#39;&quot;</span><span class="w"> </span>html
+</pre></div>
+</div>
+</section>
+<section id="id10">
+<h2>Темы оформления<a class="headerlink" href="#id10" title="Ссылка на этот заголовок"></a></h2>
+<p>Настройка темы Alabaster:</p>
+<div class="literal-block-wrapper docutils container" id="id20">
+<div class="code-block-caption"><span class="caption-number">Листинг 4 </span><span class="caption-text">Настройки темы в conf.py</span><a class="headerlink" href="#id20" title="Ссылка на этот код"></a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;logo&#39;</span><span class="p">:</span> <span class="s1">&#39;logo.png&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;logo_name&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Демонстрация Sphinx&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;github_user&#39;</span><span class="p">:</span> <span class="s1">&#39;username&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;github_repo&#39;</span><span class="p">:</span> <span class="s1">&#39;repo&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;github_banner&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;github_button&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;show_powered_by&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s1">&#39;extra_nav_links&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;PDF&#39;</span><span class="p">:</span> <span class="s1">&#39;https://example.com/docs.pdf&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Исходный код&#39;</span><span class="p">:</span> <span class="s1">&#39;https://github.com/user/repo&#39;</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="id11">
+<h2>Кастомизация вывода<a class="headerlink" href="#id11" title="Ссылка на этот заголовок"></a></h2>
+<p>HTML выходные файлы:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_additional_pages</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;download&#39;</span><span class="p">:</span> <span class="s1">&#39;download.html&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">html_extra_path</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;robots.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;.nojekyll&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>PDF вывод через LaTeX:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">latex_elements</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;papersize&#39;</span><span class="p">:</span> <span class="s1">&#39;a4paper&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;pointsize&#39;</span><span class="p">:</span> <span class="s1">&#39;12pt&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;preamble&#39;</span><span class="p">:</span> <span class="sa">r</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">    \usepackage[utf8]</span><span class="si">{inputenc}</span>
+<span class="s1">    \usepackage[russian]</span><span class="si">{babel}</span>
+<span class="s1">    &#39;&#39;&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="id12">
+<h2>Производительность<a class="headerlink" href="#id12" title="Ссылка на этот заголовок"></a></h2>
+<p>Оптимизация сборки:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Параллельная сборка</span>
+<span class="n">html_build_parallel</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="c1"># Кеширование</span>
+<span class="n">html_cache_path</span> <span class="o">=</span> <span class="s1">&#39;cache&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="id13">
+<h2>Отладка<a class="headerlink" href="#id13" title="Ссылка на этот заголовок"></a></h2>
+<p>Полезные опции для отладки:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Подробный вывод</span>
+sphinx-build<span class="w"> </span>-v<span class="w"> </span><span class="nb">source</span><span class="w"> </span>build
+
+<span class="c1"># Проверка ссылок</span>
+sphinx-build<span class="w"> </span>-b<span class="w"> </span>linkcheck<span class="w"> </span><span class="nb">source</span><span class="w"> </span>build
+
+<span class="c1"># Профилирование</span>
+sphinx-build<span class="w"> </span>-E<span class="w"> </span>-a<span class="w"> </span><span class="nb">source</span><span class="w"> </span>build
+</pre></div>
+</div>
+</section>
+<section id="git">
+<h2>Интеграция с Git<a class="headerlink" href="#git" title="Ссылка на этот заголовок"></a></h2>
+<p>Автоматическое определение версии:</p>
+<div class="literal-block-wrapper docutils container" id="id21">
+<div class="code-block-caption"><span class="caption-number">Листинг 5 </span><span class="caption-text">В conf.py</span><a class="headerlink" href="#id21" title="Ссылка на этот код"></a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">release</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">check_output</span><span class="p">([</span><span class="s1">&#39;git&#39;</span><span class="p">,</span> <span class="s1">&#39;describe&#39;</span><span class="p">,</span> <span class="s1">&#39;--tags&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="n">release</span> <span class="o">=</span> <span class="s1">&#39;1.0.0&#39;</span>
+</pre></div>
+</div>
+</div>
+<p>Хуки Git для автосборки:</p>
+<div class="literal-block-wrapper docutils container" id="id22">
+<div class="code-block-caption"><span class="caption-number">Листинг 6 </span><span class="caption-text">.git/hooks/post-commit</span><a class="headerlink" href="#id22" title="Ссылка на этот код"></a></div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="nb">cd</span><span class="w"> </span>docs/
+make<span class="w"> </span>html
+</pre></div>
+</div>
+</div>
+</section>
+<section id="id14">
+<h2>Развертывание<a class="headerlink" href="#id14" title="Ссылка на этот заголовок"></a></h2>
+<p>GitHub Pages:</p>
+<div class="literal-block-wrapper docutils container" id="id23">
+<div class="code-block-caption"><span class="caption-number">Листинг 7 </span><span class="caption-text">.github/workflows/docs.yml</span><a class="headerlink" href="#id23" title="Ссылка на этот код"></a></div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Build and Deploy Docs</span>
+<span class="nt">on</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">push</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="nv">main</span><span class="w"> </span><span class="p p-Indicator">]</span>
+
+<span class="nt">jobs</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">build-and-deploy</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Setup Python</span>
+<span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v2</span>
+<span class="w">      </span><span class="nt">with</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">python-version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.9&#39;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Install dependencies</span>
+<span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pip install sphinx sphinx-rtd-theme</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Build docs</span>
+<span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">make html</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deploy to GitHub Pages</span>
+<span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">peaceiris/actions-gh-pages@v3</span>
+<span class="w">      </span><span class="nt">with</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">github_token</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.GITHUB_TOKEN }}</span>
+<span class="w">        </span><span class="nt">publish_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./build/html</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="id15">
+<h2>Мониторинг документации<a class="headerlink" href="#id15" title="Ссылка на этот заголовок"></a></h2>
+<p>Метрики качества документации:</p>
+<ul class="simple">
+<li><p>Покрытие API автодокументацией</p></li>
+<li><p>Количество битых ссылок</p></li>
+<li><p>Время сборки</p></li>
+<li><p>Размер вывода</p></li>
+</ul>
+<p>Инструменты для анализа:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Анализ битых ссылок</span>
+sphinx-build<span class="w"> </span>-b<span class="w"> </span>linkcheck<span class="w"> </span><span class="nb">source</span><span class="w"> </span>build
+
+<span class="c1"># Статистика документации</span>
+sphinx-build<span class="w"> </span>-b<span class="w"> </span>coverage<span class="w"> </span><span class="nb">source</span><span class="w"> </span>build
+</pre></div>
+</div>
+</section>
+<section id="id16">
+<h2>Безопасность<a class="headerlink" href="#id16" title="Ссылка на этот заголовок"></a></h2>
+<p>Рекомендации по безопасности:</p>
+<ul class="simple">
+<li><p>Не включайте конфиденциальную информацию в публичную документацию</p></li>
+<li><p>Проверяйте права доступа к приватным репозиториям</p></li>
+<li><p>Используйте HTTPS для всех внешних ссылок</p></li>
+<li><p>Регулярно обновляйте зависимости Sphinx</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Предупреждение</p>
+<p>Будьте осторожны с директивой <cite>.. raw::</cite> - она может быть источником уязвимостей.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="cross_references.html" class="btn btn-neutral float-left" title="Перекрестные ссылки" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+        <a href="glossary.html" class="btn btn-neutral float-right" title="Глоссарий" accesskey="n" rel="next">Следующая <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Авторские права 2025, Dias Kabdualiyev. </p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
