@@ -1,75 +1,41 @@
-name: Build and Deploy Documentation
+name: Build & Deploy Sphinx docs
 
-# Автоматическая сборка при push в main/master
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  
-  # Возможность запуска вручную
+    branches: [main]
   workflow_dispatch:
 
-# Права доступа для записи в Pages
-permissions:
-  contents: read
+permissions:          # ⬅︎ нужны действиям, которые пушат
+  contents: write
   pages: write
   id-token: write
 
-# Предотвращение одновременного выполнения деплоев
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
-  # Сборка документации
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-    
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-    
-    - name: Setup Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-    
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-    
-    - name: Build documentation
-      run: |
-        # Выполняем make html из корневой папки где находится Makefile
-        make html
-        # Создаем .nojekyll для правильной работы с GitHub Pages
-        touch build/html/.nojekyll
-    
-    - name: Deploy to GitHub Pages
-      if: github.ref == 'refs/heads/main'
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build/html
-        force_orphan: true
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
-        commit_message: 'Deploy documentation ${{ github.sha }}'
+      # 1. Клон репозитория
+      - uses: actions/checkout@v4
 
-  # Проверка ссылок (опционально)
-  link-check:
-    runs-on: ubuntu-latest
-    needs: build-and-deploy
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
-    
-    steps:
-    - name: Wait for deployment
-      run: sleep 60
-      
-    - name: Check links
-      uses: untitaker/hyperlink@0.1.32
-      with:
-        args: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
-      continue-on-error: true 
+      # 2. Python ≥ 3.11 (нужен Sphinx 8+)
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 3. Установка зависимостей (тут же и sphinx_design)
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 4. Сборка HTML; Makefile сам знает, что исходники в source/, а build/ – вывод
+      - name: Build HTML
+        run: make html
+
+      # 5. Публикация содержимого build/html в ветку gh-pages
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages          # цель
+          publish_dir: build/html           # откуда брать собранный сайт 
