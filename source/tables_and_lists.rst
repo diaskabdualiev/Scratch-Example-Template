@@ -152,6 +152,7 @@ REST (Representational State Transfer)
 --verbose     Длинная опция
 --output=file Длинная опция с аргументом
 
+
 Комбинированные структуры
 =========================
 
